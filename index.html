@@ -1,0 +1,1427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAS Library Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D40NM8X434"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D40NM8X434');
+</script>
+    
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img id="school-logo" src="images/images.png" alt="Zahraa American School Logo">
+            <h1>ZAS Library Catalogue</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://am.elzahraa.org/ar/" target="_blank">School Website</a></li>
+                <li><a href="https://chat.whatsapp.com/Fa1ejo0LsObFF7ddE6NWVd?mode=ems_copy_t">Join The Readers</a></li>
+                <li><a href="#student-reviews">Book Reviews</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSesy68PpUgAKKPFu20RyMB5FUtclDSSOMx-LKsPXoJFLQ0nXQ/viewform?usp=dialog" target="_blank">Make a Book Review</a></li>
+                <li><button type="button" class="nav-button modal-trigger">Library Rules</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<section class="search-container">
+    <form id="search-form">
+        <label class="visually-hidden" for="search-input">Search the library catalogue</label>
+        <input type="search" id="search-input" placeholder="Search our library collection..." autocomplete="off" aria-describedby="search-status">
+        <div class="advanced-search">
+            <label class="visually-hidden" for="category-filter">Filter by category</label>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="fiction">Fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="young adult">Young Adult</option>
+                <option value="adventure">Adventure</option>
+                <option value="comedy">Comedy</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+                <option value="drama">Drama</option>
+                <option value="classic">Classic</option>
+                <option value="dystopian">Dystopian</option>
+                <option value="reference">Education</option>
+                <option value="Children">Children</option>
+                <option value="horror">Horror</option>
+                <option value="Memoir">Memoir</option>
+                <option value="self">Self Help</option>
+                <option value="ps">Psychology</option>
+
+            </select>
+            <button type="submit" id="search-button">
+                <i class="fas fa-search"></i> Search
+            </button>
+            <button type="button" id="clear-search" hidden>Clear search</button>
+        </div>
+    </form>
+</section>
+
+    
+    <main>
+        
+        <section class="featured-books">
+            <h2>Library Book Collection</h2>
+            <div class="collection-intro">
+                <p>These books are available for students to borrow, simply consult Ms.Agnis during the break</p>
+            </div>
+            <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+            <div id="collection-grid" class="book-grid">
+                
+            </div>
+        </section>
+
+        <section id="student-reviews" class="student-reviews">
+            <h2><i class="fas fa-star"></i> What Our Students Are Reading</h2>
+            
+            <div class="reviews-grid">
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/killers.jpg" alt="Cover of Psychology of Notorious Serial Killers" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Psychology of Notorious Serial Killers</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Shahd Mohammed - 12C (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "I like this book because it delves into the minds of infamous criminals, exploring the psychological factors that drive them to commit horrible acts. it provides insight into the dark and disturbing motivations behind serial killers, offering a chilling glimpse into the human psyche, I find those type of books really entertaining"
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/silvereyes.jpg" alt="Cover of FNAF: The Silver Eyes" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">FNAF: The Silver Eyes</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fas fa-user-graduate"></i>
+                                Abdullah Beshir - Graduate (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "“I’m not into horror books that much, but the silver eyes uses some scenarios that can actually happen in real life, The situations themselves aren’t actually what makes the situation fully scary; it’s the descriptions of how it occurs. It’s simply an immersive take on how terrifying using the uncanny valley can be, also charlie dies”"
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/coffee.jpg" alt="Cover of Before the Coffee Gets Cold" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Before the Coffee Gets Cold</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Ainoor - 11C (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "Before the coffee gets cold is a beautifully written heart warming story .It switches between multiple protagonists with their own heartfelt stories ,relationships ,and reasons to want to use the cafe’s magic . with themes of heartbreak , love, loss and death ,it's an emotional rollercoaster but definitely worth the tears"
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/nohuman.jpg" alt="Cover of No Longer Human" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">No Longer Human</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Farida Islam 12C (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "I liked this book because it shows the alienation and despair of Ōba Yōzō, a man who feels disconnected from himself and humanity. Since childhood, he’s struggled to understand emotions, hiding behind jokes to mask his confusion. It feels like reading the journal of a man falling apart. By the end, Yōzō sees himself as completely ruined"
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/wallflower.jpg" alt="Cover of The Perks of Being a Wallflower" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Perks of Being a WallFlower</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Mariam Ahmed - 11A (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "The Perks of Being a Wallflower stuck with me. It speaks perfectly well with what it is to grow up, to feel invisible, yet still find the beauty in little things. Charlie’s story feels so real; his thoughts and emotions just make you feel seen and remind you that it is okay to be different"
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/wonder.jpg" alt="Cover of Wonder" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Wonder</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Yehia Magdy - 12C (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "Wonder tells the beautiful story of august, a 10yr boy who struggles in life due to his face deformity, whether it be in social experiences or straight up discrimination it reinforces the idea that we need to look beyond physical appearances and look upon the uniqueness of every individual"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/callwild.jpg" alt="Cover of The Call of the Wild" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">the Call of the Wild</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Hager Mohamed - G7 (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "This book is an amazing  book. The book talks about  a dog who is stolen from his home and thrown  into the world of  Yukon  gold rush .what makes it great ,  strong emotional  impact  and the deep themes."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/twocities.jpg" alt="Cover of A Tale of Two Cities" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">A Tale of Two Cities</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Mariam Mohammad - 10C (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "I really loved how it's interesting and educational at the same time and the drama in it makes me want to continue reading more and more chapters. i recommend it to people who love exciting books and alot of actions and themes. overall I'm really impressed by the book."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/ofmice.jpg" alt="Cover of Of Mice and Men" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Of Mice And Men</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Roaa Sherif - 10D (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "It’s about George and Lennie, two guys just hoping that they’ll finally get a place, but Lennie has a disability, so he doesn’t really understand the world, so George watches over him. They kept working, saving, and for once it actually feels close. Then, just like that, fate steps in. “Out of all the words Of Mice And Men, the saddest are, 'it might've been'"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/stone.jpg" alt="Cover of Harry Potter" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Harry Potter (series)</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Rodayna Ahmed - 10C (2025)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "As someone who practically grew up with the Harry Potter books glued to my hands, the series has always played a huge role in my childhood. It was all about magic spells, brooms, mystical creatures, and the idea that an owl could possibly show up at my window with a Hogwarts letter. Reading and rereading these books always entertains me, and I never get bored of them. Every time I open one of these books, it feels like escaping into a place where everything is magical."
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/help.jpg" alt="Cover of The Help" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Help</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Nada Hamdy - 11C
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "The Help is a story about two Black maids and a young white woman who writes a book about their lives. It shows how unfair life was in the 1960s and how brave the women were to speak up. As a student, it’s a good book because it’s emotional, easy to follow, and teaches you about kindness, courage, and treating people equally. And finally its an inspiring and meaningful book"
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/Prey.webp" alt="Cover of Prey" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Prey: Michael Crichton</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Asem Osama - 11F
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "It's Probably the best book I have ever read it's full of plot twists and it's a book that raises awareness about a problem we are facing now which is the terrifyingly fast speed at which ai is evolving even though it's a relatively long book its 100% worth reading and the end was amazing."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/american.jpg" alt="Cover of A History of American Literature" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">A History of American Literature</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Mehesty Mohamed - 10E
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            "'This book explains how American literature developed from the past to modern times. It talks about important writers, ideas, and movements. The author shows how history and culture influenced the writing. It is easy to understand and helpful for students learning about American literature."
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/animalfarm.jpg" alt="Cover of Animal Farm" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Animal Farm</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Adam Diab (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;basically a bunch of farm animals kick out the humans so they can finally have an equal society, but then the pigs end up taking over and turning into the same tyrants they got rid of, which kind of proves power corrupts no matter who has it. my favorite parts were the actual rebellion against Mr. Jones and how hopeful everyone was in the beginning before things went wrong. the worst part was definitely Boxer getting betrayed and then realizing at the end that nothing actually changed. favorite quote: &#39;All animals are equal, but some animals are more equal than others.&#39; genuinely one of the best books I&#39;ve read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/80days.jpg" alt="Cover of Around the World in Eighty Days" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Around the World in Eighty Days</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Hana Mohamed – 11B (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Jules Verne&#39;s Around the World in Eighty Days follows Phileas Fogg, an English gentleman who bets he can circle the globe in eighty days, bringing servant Passepartout for a trip full of one disaster after another, including a detective named Fix convinced Fogg is a criminal. Along the way they rescue a woman named Aouda who joins them, and Fogg wins the bet because he forgot he gained a day traveling east. My favorite parts were rescuing Aouda and that final win. The worst parts were Fix&#39;s wrongful arrest and the missed trains and ships. Favorite line: &#39;Fortune favors the bold.&#39; The best book I&#39;ve read, a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/atomichabits.jpg" alt="Cover of Atomic Habits" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Atomic Habits</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Hamza Elbishery – 11A (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Atomic Habits is basically about how tiny changes to your daily routine add up to huge results if you stick with them long enough, and it walks you through building good habits while dropping bad ones. What I liked most was seeing how those small 1% improvements actually compound, and the way it breaks down the habit loop clearly. My only complaint is some sections got a little repetitive and didn&#39;t feel super backed by science. Favorite lines: &#39;Habits are the compound of self improvements,&#39; and &#39;Every action you take is a vote for the type of person you wish to be.&#39; Solid, practical read for lasting change.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/theoutsiders.webp" alt="Cover of The Outsiders" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Outsiders</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Aya Samir – 11A (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Told from Ponyboy Curtis&#39;s point of view, a fourteen year old Greaser from the rough side of town, this book is about the tension between Greasers and rich Socs who get away with everything. My favorite moment was Ponyboy and Johnny running into a burning church to save kids, showing that being brave and good has nothing to do with social class. The worst parts were Johnny getting stabbed, Ponyboy nearly failing school, and the endless Soc vs Greaser drama. Favorite lines: &#39;Stay gold, Ponyboy. Stay gold,&#39; &#39;Things are rough all over,&#39; and &#39;I lie to myself all the time, but I never believe me.&#39; Definitely a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/deadpoetssociety.jpg" alt="Cover of Dead Poets Society" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Dead Poets Society</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Reem Sherif – 11A (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This one follows Mr. Keating, a teacher who pushes his students to &#39;seize the day&#39; and actually means it. My favorite moments were him introducing Carpe Diem in his very first class, the students secretly bringing back the Dead Poets Society, and the ending where the boys stand on their desks for him. What bothered me was the school&#39;s strict rules crushing everyone&#39;s freedom, Neil being forced by his dad to quit acting, and Keating getting blamed and fired unfairly. Favorite quotes: &#39;Carpe diem. Seize the day,&#39; &#39;Words and ideas can change the world,&#39; and &#39;Poetry speaks to the human spirit.&#39;&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thebigthree.png" alt="Cover of The Big Three" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Big Three</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Mahmoud Gad – 11C (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Robert Glazer&#39;s The Big Three breaks life into three pillars, your partner, your vocation, and your community, arguing real satisfaction comes when all three line up with your actual values. I loved the sections on the peace of that alignment, the turning point of reclaiming your agency, and the value of a supportive community. The rough parts were the &#39;Four Horsemen,&#39; terror, bewilderment, frustration, and despair, plus how draining it is to live against your true self or force a career or relationship that doesn&#39;t fit. Favorite lines: &#39;Adversity truly introduces us to ourselves,&#39; and &#39;It is always my choice.&#39; Best book I&#39;ve read, easily.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/themountainisyou.webp" alt="Cover of The Mountain Is You" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Mountain Is You</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Menna ElMouafy – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Brianna Wiest digs into self-sabotage here, why our fears, habits, and negative thoughts keep getting in the way of our own growth, and why we repeat harmful patterns even when we know better. My favorite takeaways were realizing discipline and self-trust are what actually create change, and that healing yourself matters more than proving anything to other people. My only issue is some ideas repeat a bit too much, though the message still lands. Favorite lines: &#39;Your new life is going to cost you your old one,&#39; and &#39;The mountain you are trying to climb is yourself.&#39; Honest and motivating, I&#39;d recommend it.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thealchemist.webp" alt="Cover of The Alchemist" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Alchemist</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Omar Abdo – 11E (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Santiago is a young shepherd chasing a dream of hidden treasure, and his trip from Spain all the way to Egypt teaches him a lot about courage, patience, and actually following your dreams. My favorite parts were him leaving his old life behind, crossing the desert, and slowly learning to trust his own heart. A few sections dragged a little and some ideas felt kind of confusing. Favorite quote: &#39;When you want something, all the universe conspires in helping you to achieve it.&#39; Easily the best book I&#39;ve read, truly a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thelittleprince.webp" alt="Cover of The Little Prince" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Little Prince</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Mostafa – 11 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;The Little Prince follows a young prince hopping from planet to planet, meeting all these different characters and picking up little lessons about life, love, and people along the way. It&#39;s such a simple story but it&#39;s packed with meaning underneath. I loved the emotional lessons each character teaches and how easy the language is to follow. My only issue is a couple parts felt confusing and younger readers might miss the deeper message. Favorite quote: &#39;It is only with the heart that one can see rightly; what is essential is invisible to the eye.&#39; A genuinely beautiful book, highly recommend.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/janeeyre.webp" alt="Cover of Jane Eyre" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Jane Eyre</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Khadiga Ayman – 11 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Jane Eyre grows up as an orphan facing hardship after hardship but comes out strong and independent. She suffers through Lowood School but still stands up for herself, and later works as a governess at Thornfield Hall where she falls for Mr. Rochester. My favorite parts were her courage at Lowood, the romance with Rochester, and her choosing independence and self respect over everything else. The hardest parts were her rough childhood and the dark secrets at Thornfield. Favorite lines: &#39;I am no bird; and no net ensnares me,&#39; and &#39;I am a free human being with an independent will.&#39; This book made me cry, definitely a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thepursuitofhappyness.webp" alt="Cover of The Pursuit of Happyness" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Pursuit of Happyness</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Eyad Amr Bahnasi – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This is the true story of Chris Gardner, a salesman who becomes homeless while raising his son. With all that hardship he never gives up, and through hard work lands an internship at a brokerage firm and builds a life for them both. My favorite parts were him getting the job, his bond with his son, and his joy when it paid off. The hardest parts were sleeping in a subway bathroom, struggling with rent, and watching his son suffer. Favorite lines: &#39;Don&#39;t ever let somebody tell you you can&#39;t do something,&#39; and &#39;You got a dream, you gotta protect it.&#39; This one made me cry, a must watch.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/egoistheenemy.webp" alt="Cover of Ego Is the Enemy" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Ego Is the Enemy</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Ammar Nassar – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Ryan Holiday&#39;s Ego Is the Enemy is all about managing your own ego, both with yourself and with everyone around you. Honestly I think every athlete, entrepreneur, leader, or just anyone trying to do something with their life should read it. My favorite part was realizing how to actually deal with high ego coworkers, and there wasn&#39;t really a bad moment for me in this one. Favorite quote: &#39;I don&#39;t like work, no man does, but I like what is in the work: the chance to find yourself.&#39; Truly a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/AddresstotheWomenofAmerica.jpg" alt="Cover of Address to the Women of America" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Address to the Women of America</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Jana Amr Abdel Razik &amp; Tala Hamed – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Gloria Steinem gave this speech in 1971 at the founding of the National Women&#39;s Political Caucus, and it&#39;s a powerful call for equality. She frames the fight for women&#39;s rights not as a small reform but as a full revolution toward a fairer, humanist society free from roles based on sex or race. My favorite moment was hearing her say &#39;This is no simple reform. It really is a revolution,&#39; and the impact of launching such a major advocacy group. The hardest part was realizing how strict the limits on women were in the 1970s. This speech pushed intersectional revolution forward and still feels relevant today, a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/greatexpectations.webp" alt="Cover of Great Expectations" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Great Expectations</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Peter Antoun – 11E (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Pip is an orphan raised by his strict older sister and her kinder husband Joe, and everything changes after he helps an escaped convict and starts visiting Miss Havisham and Estella. Once he receives money from a mystery benefactor he moves to London to become a gentleman, assuming Miss Havisham is behind it. My favorite parts were finding out Magwitch was the real benefactor, Pip realizing who his friends are, and his loyalty to Joe. What I didn&#39;t love was Pip treating Joe badly once he got money, and how cruelly Estella treats him. Favorite line: &#39;I loved her against reason, against promise, against peace.&#39; Best book I&#39;ve read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/insideout.webp" alt="Cover of Inside Out" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Inside Out</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Nadine Hatem – 11 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Inside Out follows Riley, a young girl adjusting to a move to a new city, guided by the five emotions running her mind, Joy, Sadness, Anger, Fear, and Disgust. It&#39;s a good lesson in dealing with change and accepting yourself. My favorite moments were Joy realizing how important Sadness is, and Bing Bong&#39;s sacrifice near the end. The hardest parts were watching Riley feel lost and unhappy, and saying goodbye to Bing Bong. Favorite line: &#39;Do you ever look at someone and wonder, what is going on inside their head?&#39; Best animated movie I&#39;ve seen, super emotional, must watch.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/iamlegend.webp" alt="Cover of I Am Legend" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">I Am Legend</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Jana Mohamed Ahmed – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Robert Neville is a U.S. Army virologist who seems to be the last immune person in a post apocalyptic New York after a man made virus turns everyone else into nocturnal mutants called Darkseekers. Alone except for his dog, he spends his days searching for a cure while trying to survive the nights. My favorite parts were his determination to keep hoping, his bond with his dog, and the sacrifice he makes to save humanity. The hardest parts were his isolation and how heavy the loneliness gets. Favorite line: &#39;Hope is what keeps us alive.&#39; Best book I&#39;ve read, truly a must watch.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/hardtimes.webp" alt="Cover of Hard Times" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Hard Times</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Omar Karim Kamal Ibrahim – 11 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Hard Times is Dickens taking aim at Victorian industrialization and the obsession with cold facts over imagination. Set in the grim town of Coketown, it shows what happens when people value material gain over compassion. My favorite parts were Louisa realizing how empty her upbringing left her, Stephen Blackpool holding onto his integrity, and Gradgrind letting go of his rigid worldview. The worst parts were the bleak setting, the harsh treatment of workers, and an ending that didn&#39;t feel satisfying. Favorite line: &#39;Now, what I want is Facts. Teach these boys and girls nothing but Facts.&#39; Heavy read, but powerful, recommended for anyone into social critique.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/pi.jpg" alt="Cover of Life of Pi" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Life of Pi</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Malak Mohamed Gaser Morad – 11B (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Life of Pi is about a boy named Pi who survives a shipwreck and ends up stranded on a lifeboat with a Bengal tiger, Richard Parker. Between storms, hunger, and loneliness he learns to survive alongside the tiger, and after 227 days at sea he reaches land and tells two versions of what happened, leaving you to decide which is true. My favorite parts were his life in India, his bond with family and animals, and what he learns about faith. The hardest parts were losing his family and the weight of that grief. Favorite line: &#39;It is how we understand it, no?&#39; Favorite movie, deeply moving, must watch.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/marketing.png" alt="Cover of Marketing" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Marketing</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Yassin Moataz – 10A (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Philip Kotler&#39;s Marketing lays out marketing as creating value and building relationships with customers that actually last, using the 4Ps, Product, Price, Place, and Promotion, as the foundation for every strategic decision. It also gets into consumer behavior and ethical marketing. My favorite parts were seeing how the 4Ps work together and understanding what drives people&#39;s buying decisions. My only complaint is some sections got dense with business jargon. Favorite line: &#39;Every action you take is a vote for the type of person you wish to become.&#39; Practical and genuinely useful, must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/meditations.webp" alt="Cover of Meditations" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Meditations</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Abdelrahman Ziad – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Meditations is Marcus Aurelius&#39;s private journal written during his military campaigns, full of timeless Stoic philosophy. It&#39;s not a polished treatise, just raw personal notes and exercises in self discipline, which makes it feel like philosophy you can actually practice daily. My favorite parts were his honesty, his reflections on nature and the universe, and how he insists self improvement must serve the greater good. The style gets repetitive and fragmented at times, but that&#39;s the point since it was never meant to be published. Favorite line: &#39;You have power over your mind, not outside events. Realize this, and you will find strength.&#39; Profound and intimate, a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/abronxtale.webp" alt="Cover of A Bronx Tale" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">A Bronx Tale</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Omar Ahmed Atef – 10E (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;A Bronx Tale follows Calogero growing up in the Bronx in the 1960s, torn between his hardworking honest father and Sonny, a powerful gangster who ends up becoming his mentor. As he gets older he has to actually choose between a life of crime and the values his dad taught him. My favorite parts were Sonny teaching him about respect, the biker bar scene, and his bond with his father. The rough parts were the violence, the racial tension, and Sonny&#39;s ending. Favorite lines: &#39;The saddest thing in life is wasted talent,&#39; and &#39;Now yous can&#39;t leave.&#39; Best movie I&#39;ve ever watched, easily a must watch.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/theconfidencecodeforteens.jpe" alt="Cover of The Confidence Code for Teens" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Confidence Code for Teens</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Tala Hamed – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This book argues confidence isn&#39;t something you&#39;re just born with, it&#39;s a skill you build through taking risks, messing up, and trying again. Katty Kay and Claire Shipman really dig into how fear of failure and overthinking hold teenagers back, and how confidence actually grows from small consistent actions. My favorite parts were the honest tone, the focus on progress over perfection, and the reminder that action always comes before confidence. My only complaint is some parts felt a little generic and could&#39;ve used more personal stories. Favorite lines: &#39;Confidence is something you build,&#39; and &#39;Action comes before confidence, not the other way around.&#39; Realistic, empowering, relevant, must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/surroundedbyphsycopaths.webp" alt="Cover of Surrounded by Psychopaths" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Surrounded by Psychopaths</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Hana El Garhy – 11F (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Thomas Erikson&#39;s Surrounded by Psychopaths teaches you how to spot subtle manipulation in everyday interactions so people can&#39;t emotionally control you as easily. My favorite parts were learning how manipulators size up your personality first, recognizing subtle guilt tripping, and just feeling stronger once you start setting real boundaries. What got old was the repetitive explanations, the constant stream of manipulative people stories, and advice that sometimes felt kind of obvious. Favorite lines: &#39;Not everyone who smiles at you has good intentions,&#39; and &#39;Setting boundaries isn&#39;t rude, it&#39;s self respect.&#39; Useful lessons overall but felt uneven, I&#39;ve read better books on this.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thebookthief.webp" alt="Cover of The Book Thief" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Book Thief</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Yusuf Walid – 11B (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Set in Nazi Germany, The Book Thief follows Liesel Meminger, a young girl who finds comfort stealing and reading books despite the war, hunger, and fear. Through her friendship with Rudy Steiner and Max, a Jewish man her family is hiding, she learns about courage, loss, and how words can hurt or heal. My favorite parts were her first stolen book, her loyalty to Rudy, and Max&#39;s hopeful handwritten stories. The hardest parts were the bombing scenes and the deaths of people she loves. Favorite line: &#39;I have hated the words and I have loved them, and I hope I have made them right.&#39; Emotional and powerful, unforgettable.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thescorpioraces.webp" alt="Cover of The Scorpio Races" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Scorpio Races</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Nurai Tarek M. Weheba – 11 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;On the island of Thisby, riders risk their lives every November racing deadly water horses out of the sea. The story follows Sean Kendrick, a returning champion, and Puck Connolly, the first girl to ever enter the race, as Sean chases freedom and Puck fights to keep her family together. My favorite parts were Sean teaching Puck how to connect with a water horse, the tense final race, and the quiet respect between them. The rough parts were a brutal beach attack, the constant hostility toward Puck, and a rushed subplot with her brother. Favorite line: &#39;I am so very tired of being afraid.&#39; Gripping and atmospheric, must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thetelltaleheart.webp" alt="Cover of The Tell-Tale Heart" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Tell-Tale Heart</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Ahmed Ashraf – 4HB (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This one follows a man haunted by the pale blue eye of the old man he lives with, and driven by fear and obsession he ends up murdering him and hiding the body under the floorboards. When the police show up his guilt builds until he hears a heartbeat getting louder and louder, and finally confesses. My favorite parts were the murder itself, the investigation, and that terrifying heartbeat. The worst parts were dismembering the body and the narrator losing it at the end. Favorite line: &#39;It grew louder, louder, louder!&#39; Best book I&#39;ve read, genuinely a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/itstartswithus.jpe" alt="Cover of It Starts With Us" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">It Starts With Us</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Maryem Mohamed Gaber – 1D (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This is the sequel to It Ends With Us, picking up with Lily Bloom&#39;s life after her divorce from Ryle as she reconnects with her first love, Atlas Corrigan. Told from both Lily and Atlas&#39;s perspectives, it reveals how hard Atlas&#39;s childhood was and how deep his feelings for Lily still run. My favorite parts were Lily&#39;s courage to break the cycle of abuse, finding love again, and the hopeful new start with Atlas. The hardest parts were the painful memories of her past and facing that trauma. The biggest lesson was that choosing yourself comes first. Emotional, empowering, heartfelt, a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/prideandprejudice.webp" alt="Cover of Pride and Prejudice" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Pride and Prejudice</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Nouray Mohamed – 11 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Jane Austen&#39;s classic follows Elizabeth Bennet, sharp and independent, and Mr. Darcy, a wealthy but prideful gentleman, as they clash before slowly falling for each other in early 19th century England. My favorite parts were Elizabeth&#39;s wit and confidence, Darcy&#39;s growth through real self reflection, and that pivotal letter scene that changes everything between them. The only slow parts were some of the social event descriptions, though they capture the culture of the time well. Favorite line: &#39;Till this moment I never knew myself.&#39; Timeless and beautifully written, truly a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/secretgarden.jpg" alt="Cover of The Secret Garden" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Secret Garden</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Hanna Wael – 11C (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Mary Lennox is a lonely, spoiled girl sent to live with her uncle in Yorkshire after her parents die, and she discovers a hidden garden that transforms her life along with everyone around her. My favorite parts were her finding the key to the garden, Colin taking his first steps, and the garden finally blooming with life. The harder parts were Mary&#39;s neglected childhood and Colin&#39;s sadness and anger from being sick so long. Favorite line: &#39;Where you tend a rose, my lad, a thistle cannot grow.&#39; Best book I&#39;ve read, truly a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thelottery.webp" alt="Cover of The Lottery" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Lottery</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Yousef Osama – 11A (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This chilling short story follows a village that blindly keeps up an old tradition every single year, and it all seems pretty normal until the shocking ending reveals just how cruel following tradition without question can be. My favorite part was that twist at the very end, it really makes you sit and think about human behavior. The worst part was obviously the brutal outcome of the lottery itself. Favorite line: &#39;Lottery in June, corn be heavy soon.&#39; Thought provoking and honestly unsettling, truly a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/ratatoiulle.webp" alt="Cover of Ratatouille" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Ratatouille</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Loujy Elsalmly – 11E (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Ratatouille follows Remy, a rat who dreams of becoming a chef in Paris despite everyone&#39;s fear of rats, and he forms an unlikely partnership with Linguini, a young kitchen worker, proving talent can come from anywhere. My favorite parts were Remy secretly cooking in the restaurant, the final dish served to the food critic, and Anton Ego&#39;s childhood memory that changes his review. The harder parts were Remy&#39;s separation from his family and the tension when his secret almost got out. Favorite line: &#39;Not everyone can become a great artist, but a great artist can come from anywhere.&#39; Inspiring and heartfelt, a must watch.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/theronclarkstory.webp" alt="Cover of The Ron Clark Story" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Ron Clark Story</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Zeyad – 11 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This 2006 biographical drama is based on the real life of Ron Clark, a teacher who leaves a comfortable job in North Carolina to teach unmotivated, disruptive students in Harlem. He wins them over with patience, creativity, and empathy, from songs and chants to visiting their homes. My favorite parts were his creative teaching methods, his refusal to give up on any student, and the class winning a national academic competition. A few scenes felt overly dramatic, but they still landed the emotional point. Favorite line: &#39;I believe that if someone tells you that you can do something, you will.&#39; Realistic and deeply motivating, must watch.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/HarrietTubmanConductorontheUndergroundRailroad.jpe" alt="Cover of Harriet Tubman: Conductor on the Underground Railroad" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Harriet Tubman: Conductor on the Underground Railroad</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Malak Karim – 8 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;This book tells the true story of Harriet Tubman, born into slavery in the early 1820s, who despite a severe childhood injury escaped to freedom and became a conductor on the Underground Railroad, risking her life to lead others out. She later worked as a scout, spy, and nurse for the Union Army during the Civil War. My favorite parts were her escape, her courage helping others, and how her legacy is remembered today. The hardest parts were her injury and the cruelty of slavery. Favorite line: &#39;I never ran my train off the track, and I never lost a passenger.&#39; Best book I&#39;ve read, truly a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/littlewomen.jpeg" alt="Cover of Little Women" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Little Women</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Hamza Mohamed – 8 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Little Women follows the four March sisters, Meg, Jo, Beth, and Amy, growing up in New England during the Civil War while their father is away fighting. Guided by their mother, each learns kindness, patience, and hard work while chasing her own dreams. My favorite parts were the sisters helping poorer families despite having little themselves, Jo pursuing her dream of becoming a writer, and her friendship with Laurie. The hardest parts were Beth&#39;s illness and the emotional weight of that storyline. Favorite line: &#39;I am not afraid of storms, for I am learning how to sail my ship.&#39; Best book I&#39;ve read, truly a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/thedarkisrising.webp" alt="Cover of The Dark Is Rising" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Dark Is Rising</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Karma Ahmed – G8 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Will Stanton discovers on his 11th birthday that he&#39;s the last of the Old Ones, immortal guardians of the Light, and has to travel through time gathering six magical Signs, Iron, Bronze, Wood, Stone, Fire, and Water, before the Dark can plunge the world into endless winter. My favorite parts were the magical, snowy English countryside and the moment all six Signs finally come together. The scarier parts were the threat of being hunted by the Rider, Will&#39;s isolation from his family, and the eerie pressure over the whole village. Favorite line: &#39;Fear is a ghost, Will Stanton. It is not a thing.&#39; Haunting and unforgettable.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/rollofthunderhearmycry.webp" alt="Cover of Roll of Thunder, Hear My Cry" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">Roll of Thunder, Hear My Cry</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star empty"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Miza Adel – 8 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Set in 1930s Mississippi, this follows the Logan family fighting for their land against systemic racism, seen through Cassie Logan as she loses her innocence witnessing the harsh realities of the Jim Crow South. It builds to Papa setting fire to the cotton fields to save T.J. from a lynch mob, showing resilience and courage. My favorite part was the sacrifice Papa makes for T.J. The hardest parts were the Berry family&#39;s burning and Cassie&#39;s encounter in Strawberry. Favorite line: &#39;All that belongs to you, as long as you live, you look even at the sky and know that you are somebody.&#39; Emotional and moving, a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/theroadnottaken.webp" alt="Cover of The Road Not Taken" class="book-cover-small">
+                        <div class="review-meta">
+                            <h3 class="book-title-review">The Road Not Taken</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="student-name">
+                                <i class="fa-solid fa-book"></i>
+                                Omar Alaa – Grade 8 (2026)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <div class="review-quote">
+                            &quot;Robert Frost&#39;s classic poem is about a traveler who reaches a fork in a yellow wood and has to choose between two paths, eventually picking the one &#39;less traveled by,&#39; knowing it will shape his life forever. My favorite part was him pausing to reflect before making that bold choice, and realizing later how much that decision mattered. The hardest part was the sadness of knowing he could never go back and try the other path. Favorite line: &#39;And that has made all the difference.&#39; Timeless and deeply meaningful, a must read.&quot;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+       
+        <section class="library-info">
+            <h2>ZAS Library Information</h2>
+            <div class="info-cards">
+                <a href="#rulesModal" class="info-card info-card-clickable modal-trigger">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Library Rules</h3>
+                    <p>Click here to view library rules and borrowing guidelines</p>
+                    <div class="click-hint">
+                        <i class="fa-regular fa-hand-point-up"></i> Click to view
+                    </div>
+                </a>
+                <div class="info-card">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Remember to bring the books back!</h3>
+                    <p>its necassary to keep them in good shape</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Need Help?</h3>
+                    <p>Ask Mrs. Agnis, our librarian!</p>
+                    <p>+20 10 25747714</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ZAS Library</h3>
+                <p>"If you dont like reading, Then you just havent found the right book!"</p>
+                <img src="images/images.png" alt="ZAS Logo" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/ElZahraaAmericanDivision?locale" target="_blank">School Facebook</a></li>
+                    <li><a href="https://schooleverywhere-elzahraa.com/schooleverywhere/" target="_blank">School System</a></li>
+                    <li><button type="button" class="footer-link modal-trigger">Borrowing &amp; Library Rules</button></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Zahraa American School Library</p>
+                <p><i class="fas fa-phone"></i> Ms.Agnis: 01025747714</p>
+                <p><i class="fas fa-envelope"></i> yehia8735@gmail.com </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Zahraa American School Library.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="rulesModal" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="rules-modal-title" tabindex="-1">
+        <div class="modal-header">
+            <h2 id="rules-modal-title"><i class="fas fa-book-open" aria-hidden="true"></i> ZAS Library Rules</h2>
+            <button type="button" class="modal-close" aria-label="Close library rules">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-content">
+            <ul class="rules-list">
+                <li>
+                    <i class="fas fa-clock rule-icon"></i>
+                    <span class="rule-text">Return borrowed books within the school year.</span>
+                </li>
+                <li>
+                    <i class="fas fa-hand-holding-heart rule-icon"></i>
+                    <span class="rule-text">Handle all books with care. Don't play with them and don't fold them for bookmarking</span>
+                </li>
+                <li>
+                    <i class="fas fa-volume-mute rule-icon"></i>
+                    <span class="rule-text">Maintain a quiet atmosphere in the library. Use indoor voices for discussions.</span>
+                </li>
+                <li>
+                    <i class="fas fa-utensils rule-icon"></i>
+                    <span class="rule-text">No food or drinks are allowed near books</span>
+                </li>
+                <li>
+                    <i class="fas fa-chair rule-icon"></i>
+                    <span class="rule-text">Return chairs to their original positions before leaving.</span>
+                </li>
+                <li>
+                    <i class="fas fa-user-friends rule-icon"></i>
+                    <span class="rule-text">Respect other students' space and keep it quiet</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+   
+    <script src="books.js"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
+
+
+
